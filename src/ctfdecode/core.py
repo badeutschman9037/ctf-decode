@@ -8,13 +8,13 @@ import string
 import urllib.parse
 
 __all__ = [
-    "decode_base64",
-    "decode_hex",
-    "decode_binary",
-    "decode_url",
-    "rot_n",
-    "rot_bruteforce",
     "auto_decode",
+    "decode_base64",
+    "decode_binary",
+    "decode_hex",
+    "decode_url",
+    "rot_bruteforce",
+    "rot_n",
 ]
 
 
