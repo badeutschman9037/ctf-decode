@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ctf-decode</title>
+<style>
+  :root { --bg:#0d1117; --fg:#e6edf3; --muted:#8b949e; --accent:#3fb950; --card:#161b22; --line:#30363d; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:56px 16px; }
+  h1 { font:700 2.6rem/1.1 ui-monospace,Menlo,Consolas,monospace; margin:0 0 8px; }
+  h1 span { color:var(--accent); }
+  .tag { color:var(--muted); font-size:1.1rem; margin:0 0 20px; }
+  .badges { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 32px; }
+  h2 { font-size:1.1rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin:40px 0 12px; }
+  pre { background:var(--card); border:1px solid var(--line); border-radius:8px;
+        padding:16px; overflow-x:auto; font:14px/1.5 ui-monospace,Menlo,Consolas,monospace; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:14px 16px; }
+  .card b { font-family:ui-monospace,Menlo,Consolas,monospace; color:var(--accent); }
+  a { color:#58a6ff; }
+  footer { margin-top:56px; color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>ctf<span>-decode</span></h1>
+  <p class="tag">Decode the encodings you hit in every CTF, in one command.</p>
+
+  <div class="badges">
+    <a href="https://scorecard.dev/viewer/?uri=github.com/badeutschman9037/ctf-decode"><img alt="OpenSSF Scorecard" src="https://api.scorecard.dev/projects/github.com/badeutschman9037/ctf-decode/badge"></a>
+    <a href="https://www.bestpractices.dev/projects/YOUR_PROJECT_ID"><img alt="OpenSSF Best Practices" src="https://www.bestpractices.dev/projects/YOUR_PROJECT_ID/badge"></a>
+    <a href="https://github.com/badeutschman9037/ctf-decode/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/badeutschman9037/ctf-decode/actions/workflows/ci.yml/badge.svg"></a>
+  </div>
+
+  <pre>$ ctf-decode auto "ZmxhZ3toZWxsb30="
+[base64] flag{hello}</pre>
+
+  <h2>Decoders</h2>
+  <div class="grid">
+    <div class="card"><b>base64</b><br>Padding optional</div>
+    <div class="card"><b>hex</b><br>Spaces, colons, 0x prefix</div>
+    <div class="card"><b>binary</b><br>8-bit groups to text</div>
+    <div class="card"><b>url</b><br>Percent-encoding</div>
+    <div class="card"><b>rot / rotall</b><br>Caesar, or brute-force all 25</div>
+    <div class="card"><b>auto</b><br>Tries everything at once</div>
+  </div>
+
+  <h2>Install</h2>
+  <pre>git clone https://github.com/badeutschman9037/ctf-decode.git
+cd ctf-decode
+pip install .</pre>
+
+  <h2>Project</h2>
+  <p>Source, issues and releases are on
+    <a href="https://github.com/badeutschman9037/ctf-decode">GitHub</a>.
+    See the <a href="https://github.com/badeutschman9037/ctf-decode/blob/main/SECURITY.md">security policy</a>
+    to report a vulnerability.</p>
+
+  <footer>MIT License © 2026 Brenden Deutschman</footer>
+</main>
+</body>
+</html>
