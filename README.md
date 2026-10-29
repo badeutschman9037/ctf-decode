@@ -1,8 +1,8 @@
-# ctf-decode
+﻿# ctf-decode
 
 [![CI](https://github.com/badeutschman9037/ctf-decode/actions/workflows/ci.yml/badge.svg)](https://github.com/badeutschman9037/ctf-decode/actions/workflows/ci.yml)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/badeutschman9037/ctf-decode/badge)](https://scorecard.dev/viewer/?uri=github.com/badeutschman9037/ctf-decode)
-[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/YOUR_PROJECT_ID/badge)](https://www.bestpractices.dev/projects/YOUR_PROJECT_ID)
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/16052/badge)](https://www.bestpractices.dev/projects/16052)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 A small command-line tool that decodes the encodings you run into constantly
